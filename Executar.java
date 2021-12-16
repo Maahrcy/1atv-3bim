@@ -63,13 +63,37 @@ public class Executar {
 				case 9:
 				atualizarCliente();
 				break;
+
+				case 10: 
+				cadastrarProduto();
+				break;
+
+				case 11:
+				exibirProduto();
+				break;
+
+				case 12:
+				atualizarQuantidade();
+				break;
+
+				case 13:
+				removerProduto();
+				break;
+
+				case 14:
+				venderProduto();
+				break;
+
+				case 15:
+				ps.println("Saindo...");
+				break;
 				
 			}
-		}while(opcao != 10);
+		}while(opcao != 15);
 	}
 
 	public void menu() {
-		ps.println("1 - Cadastrar funcionário \n2 - Cadastrar cliente\n3 - Consultar funcionarios\n4 - Consultar clientes\n5 - Consultar apenas gerentes\n6 - Exibir valor total pago aos gerentes\n7- Atualizar endereço e telefone de um determinado funcionário\n8 - Atualizar o valor de vendas de um determinado vendedor\n9 - Atualizar endereço e telefone de um determinado cliente\n10 - Sair");
+		ps.println("1 - Cadastrar funcionário \n2 - Cadastrar cliente\n3 - Consultar funcionarios\n4 - Consultar clientes\n5 - Consultar apenas gerentes\n6 - Exibir valor total pago aos gerentes\n7- Atualizar endereço e telefone de um determinado funcionário\n8 - Atualizar o valor de vendas de um determinado vendedor\n9 - Atualizar endereço e telefone de um determinado cliente\n10 - Cadastrar um produto\n11 - Exibir produtos\n12 - Atualizar quantidade em estoque\n13 - Remover produtos perecíveis\n14 - Vender um produto\n15 - Sair");
 	}
 
 	private void cadastrarFuncionario() {
@@ -211,6 +235,26 @@ public class Executar {
 				clientes.get(i).atualizar(telefone, cidade, cep);
 			}
 		}
+	}
+
+	private void cadastrarProduto() {
+
+	}
+
+	private void exibirProduto() {
+
+	}
+
+	private void atualizarQuantidade() {
+
+	}
+
+	private void removerProduto() {
+
+	}
+
+	private void venderProduto() {
+
 	}
 
 	public void greenLine() {
